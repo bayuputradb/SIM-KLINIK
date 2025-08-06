@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Pengguna Sistem Informasi Manajemen Klinik</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2980b9;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #3498db;
+            margin-top: 25px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .logo-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .logo {
+            width: 200px;
+        }
+        ol, ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .image-caption {
+            font-style: italic;
+            text-align: center;
+            margin-top: -15px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .code {
+            font-family: Consolas, monospace;
+            background-color: #f5f5f5;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .footer {
+            margin-top: 50px;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        .toc {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .toc h2 {
+            margin-top: 0;
+            border-bottom: none;
+        }
+        .toc ul {
+            list-style-type: decimal;
+        }
+        .toc li {
+            margin-bottom: 8px;
+        }
+        .toc a {
+            text-decoration: none;
+            color: #2980b9;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>PANDUAN PENGGUNA SISTEM INFORMASI MANAJEMEN KLINIK</h1>
+    <h2>PT. IWIND CORPORATION</h2>
+
+    <div class="logo-container">
+        <img src="screencapture-demo-klinik-iwindcorporation-dashboard-2025-08-06-10_25_08.png" alt="Logo SIM Klinik" class="logo">
+    </div>
+
+    <div class="toc">
+        <h2>Daftar Isi</h2>
+        <ol>
+            <li><a href="#pendahuluan">Pendahuluan</a></li>
+            <li><a href="#memulai-aplikasi">Memulai Aplikasi</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#manajemen-pasien">Manajemen Pasien</a></li>
+            <li><a href="#pendaftaran-pasien">Pendaftaran Pasien</a></li>
+            <li><a href="#rekam-medis">Rekam Medis</a></li>
+            <li><a href="#manajemen-dokter">Manajemen Dokter</a></li>
+            <li><a href="#manajemen-obat">Manajemen Obat</a></li>
+            <li><a href="#manajemen-poliklinik">Manajemen Poliklinik</a></li>
+            <li><a href="#diagnosa">Diagnosa</a></li>
+            <li><a href="#manajemen-biaya">Manajemen Biaya</a></li>
+            <li><a href="#laporan">Laporan</a></li>
+            <li><a href="#manajemen-pengguna">Manajemen Pengguna</a></li>
+            <li><a href="#backup-data">Backup Data</a></li>
+        </ol>
+    </div>
+
+    <section id="pendahuluan">
+        <h2>1. Pendahuluan</h2>
+
+        <p>Sistem Informasi Manajemen Klinik (SIM Klinik) adalah aplikasi berbasis web yang dirancang untuk memudahkan proses administrasi dan manajemen di klinik kesehatan. Sistem ini mencakup berbagai fitur seperti pendaftaran pasien, rekam medis, manajemen dokter, manajemen obat, manajemen biaya, dan pembuatan laporan.</p>
+
+        <p>Panduan ini akan membantu Anda memahami cara menggunakan setiap fitur yang tersedia dalam SIM Klinik dengan efektif dan efisien.</p>
+
+        <h3>1.1 Persyaratan Sistem</h3>
+        
+        <p>Untuk menggunakan SIM Klinik, Anda memerlukan:</p>
+        <ul>
+            <li>Komputer atau perangkat dengan koneksi internet</li>
+            <li>Browser web modern (Google Chrome, Mozilla Firefox, Microsoft Edge, atau Safari versi terbaru)</li>
+            <li>Akun pengguna yang telah terdaftar dalam sistem</li>
+        </ul>
+
+        <h3>1.2 Konvensi dalam Dokumen</h3>
+        
+        <p>Dalam panduan ini, kami menggunakan konvensi berikut:</p>
+        <ul>
+            <li><span class="bold">Cetak tebal</span>: Untuk menu, tombol, dan elemen antarmuka lainnya</li>
+            <li><span class="italic">Cetak miring</span>: Untuk istilah penting atau kata kunci</li>
+            <li><span class="code">Teks kode</span>: Untuk URL atau input khusus</li>
+        </ul>
+    </section>
+
+    <section id="memulai-aplikasi">
+        <h2>2. Memulai Aplikasi</h2>
+
+        <h3>2.1 Login ke Sistem</h3>
+        
+        <ol>
+            <li>Buka browser web Anda dan akses alamat SIM Klinik (misalnya: <span class="code">http://demo-klinik.iwindcorporation.com</span>)</li>
+            <li>Masukkan username dan password yang telah diberikan oleh administrator</li>
+            <li>Klik tombol <span class="bold">Login</span></li>
+        </ol>
+
+        <h3>2.2 Mengubah Password</h3>
+        
+        <ol>
+            <li>Setelah login, klik nama pengguna Anda di pojok kanan atas</li>
+            <li>Pilih <span class="bold">Ubah Password</span></li>
+            <li>Masukkan password lama dan password baru</li>
+            <li>Klik <span class="bold">Simpan</span> untuk menyimpan perubahan</li>
+        </ol>
+    </section>
+
+    <section id="dashboard">
+        <h2>3. Dashboard</h2>
+
+        <img src="screencapture-demo-klinik-iwindcorporation-dashboard-2025-08-06-10_25_08.png" alt="Dashboard SIM Klinik">
+        <div class="image-caption">Gambar 3.1 - Tampilan Dashboard SIM Klinik</div>
+
+        <p>Dashboard SIM Klinik menampilkan ringkasan informasi penting tentang operasional klinik, seperti:</p>
+
+        <ol>
+            <li><span class="bold">Menu Navigasi</span> - Terletak di sebelah kiri layar, berisi akses ke seluruh modul sistem</li>
+            <li><span class="bold">Statistik Harian</span> - Menampilkan jumlah kunjungan pasien hari ini</li>
+            <li><span class="bold">Grafik Kunjungan</span> - Menampilkan tren kunjungan pasien dalam periode tertentu</li>
+            <li><span class="bold">Informasi Dokter Bertugas</span> - Menampilkan dokter yang sedang bertugas hari ini</li>
+            <li><span class="bold">Notifikasi</span> - Pemberitahuan tentang aktivitas penting dalam sistem</li>
+        </ol>
+
+        <h3>3.1 Navigasi Sistem</h3>
+        
+        <p>Untuk mengakses fitur-fitur dalam SIM Klinik, gunakan menu navigasi di sebelah kiri layar. Menu ini berisi:</p>
+        <ul>
+            <li>Dashboard</li>
+            <li>Pasien</li>
+            <li>Pendaftaran</li>
+            <li>Rekam Medis</li>
+            <li>Dokter</li>
+            <li>Obat</li>
+            <li>Poliklinik</li>
+            <li>Diagnosa</li>
+            <li>Biaya</li>
+            <li>Laporan</li>
+            <li>User</li>
+            <li>Backup</li>
+        </ul>
+    </section>
+
+    <section id="manajemen-pasien">
+        <h2>4. Manajemen Pasien</h2>
+
+        <h3>4.1 Melihat Daftar Pasien</h3>
+        
+        <img src="screencapture-demo-klinik-iwindcorporation-pasien-2025-08-06-10_25_28.png" alt="Daftar Pasien">
+        <div class="image-caption">Gambar 4.1 - Tampilan Daftar Pasien</div>
+
+        <p>Halaman Daftar Pasien menampilkan semua pasien yang terdaftar di klinik. Fitur pada halaman ini meliputi:</p>
+
+        <ol>
+            <li><span class="bold">Pencarian</span> - Mencari pasien berdasarkan nama, nomor rekam medis, atau informasi lainnya</li>
+            <li><span class="bold">Pengurutan</span> - Mengurutkan daftar berdasarkan nama, tanggal pendaftaran, dll.</li>
+            <li><span class="bold">Filter</span> - Menyaring pasien berdasarkan kriteria tertentu</li>
+            <li><span class="bold">Tombol Tambah Pasien</span> - Untuk mendaftarkan pasien baru</li>
+            <li><span class="bold">Tombol Aksi</span> - Untuk melihat detail, mengedit, atau menghapus data pasien</li>
+        </ol>
+
+        <h3>4.2 Menambahkan Pasien Baru</h3>
+        
+        <img src="screencapture-demo-klinik-iwindcorporation-pasien-add-2025-08-06-10_25_39.png" alt="Tambah Pasien">
+        <div class="image-caption">Gambar 4.2 - Form Tambah Pasien Baru</div>
+
+        <p>Untuk menambahkan pasien baru:</p>
+
+        <ol>
+            <li>Klik tombol <span class="bold">Tambah Pasien</span> pada halaman Daftar Pasien</li>
+            <li>Isi formulir dengan data pasien:
+                <ul>
+                    <li>Nomor Rekam Medis (otomatis terisi)</li>
+                    <li>Nama Lengkap</li>
+                    <li>Jenis Kelamin</li>
+                    <li>Tanggal Lahir</li>
+                    <li>Alamat</li>
+                    <li>Nomor Telepon</li>
+                    <li>Informasi tambahan lainnya</li>
+                </ul>
+            </li>
+            <li>Klik tombol <span class="bold">Simpan</span> untuk mendaftarkan pasien baru</li>
+        </ol>
+
+        <h3>4.3 Mengedit Data Pasien</h3>
+        
+        <p>Untuk mengedit data pasien:</p>
+        <ol>
+            <li>Temukan pasien yang ingin diubah datanya di Daftar Pasien</li>
+            <li>Klik tombol <span class="bold">Edit</span> (ikon pensil) pada kolom Aksi</li>
+            <li>Ubah informasi yang diperlukan pada formulir Edit Pasien</li>
+            <li>Klik <span class="bold">Simpan</span> untuk menyimpan perubahan</li>
+        </ol>
+
+        <h3>4.4 Menghapus Data Pasien</h3>
+        
+        <p>Untuk menghapus data pasien:</p>
+        <ol>
+            <li>Temukan pasien yang ingin dihapus di Daftar Pasien</li>
+            <li>Klik tombol <span class="bold">Hapus</span> (ikon tempat sampah) pada kolom Aksi</li>
+            <li>Konfirmasi penghapusan pada dialog yang muncul</li>
+            <li>Klik <span class="bold">OK</span> untuk menghapus data pasien</li>
+        </ol>
+    </section>
+
+    <section id="pendaftaran-pasien">
+        <h2>5. Pendaftaran Pasien</h2>
+
+        <h3>5.1 Melihat Daftar Pendaftaran</h3>
+        
+        <img src="screencapture-demo-klinik-iwindcorporation-pendaftaran-2025-08-06-10_26_26.png" alt="Daftar Pendaftaran">
+        <div class="image-caption">Gambar 5.1 - Tampilan Daftar Pendaftaran</div>
+
+        <p>Halaman Pendaftaran menampilkan daftar pasien yang mendaftar untuk kunjungan medis. Fitur pada halaman ini meliputi:</p>
+
+        <ol>
+            <li><span class="bold">Filter Tanggal</span> - Untuk melihat pendaftaran pada tanggal tertentu</li>
+            <li><span class="bold">Pencarian</span> - Mencari pendaftaran berdasarkan nama pasien atau informasi lainnya</li>
+            <li><span class="bold">Status Pendaftaran</span> - Menampilkan status dari setiap pendaftaran (menunggu, sedang diperiksa, selesai)</li>
+            <li><span class="bold">Tombol Tambah Pendaftaran</span> - Untuk mendaftarkan kunjungan baru</li>
+        </ol>
+
+        <h3>5.2 Menambahkan Pendaftaran Baru</h3>
+        
+        <img src="screencapture-demo-klinik-iwindcorporation-pendaftaran-2025-08-06-10_26_44.png" alt="Tambah Pendaftaran">
+        <div class="image-caption">Gambar 5.2 - Form Tambah Pendaftaran</div>
+
+        <p>Untuk mendaftarkan kunjungan pasien:</p>
+
+        <ol>
+            <li>Klik tombol <span class="bold">Tambah Pendaftaran</span> pada halaman Daftar Pendaftaran</li>
+            <li>Pilih pasien dari daftar yang ada atau klik <span class="bold">Pasien Baru</span> jika pasien belum terdaftar</li>
+            <li>Pilih poliklinik tujuan</li>
+            <li>Pilih dokter yang akan memeriksa</li>
+            <li>Masukkan keluhan utama pasien</li>
+            <li>Pilih jenis kunjungan (umum, BPJS, asuransi, dll.)</li>
+            <li>Klik <span class="bold">Simpan</span> untuk menyelesaikan pendaftaran</li>
+        </ol>
+
+        <h3>5.3 Mengubah Status Pendaftaran</h3>
+        
+        <p>Untuk mengubah status pendaftaran:</p>
+        <ol>
+            <li>Temukan pendaftaran yang ingin diubah statusnya di Daftar Pendaftaran</li>
+            <li>Klik tombol <span class="bold">Ubah Status</span> pada kolom Aksi</li>
+            <li>Pilih status baru (menunggu, sedang diperiksa, selesai)</li>
+            <li>Klik <span class="bold">Simpan</span> untuk menyimpan perubahan</li>
+        </ol>
+    </section>
+
+    <section id="rekam-medis">
+        <h2>6. Rekam Medis</h2>
+
+        <h3>6.1 Melihat Daftar Rekam Medis</h3>
+        
+        <img src="screencapture-demo-klinik-iwindcorporation-rekammedis-2025-08-06-10_27_07.png" alt="Daftar Rekam Medis">
+        <div class="image-caption">Gambar 6.1 - Tampilan Daftar Rekam Medis</div>
+
+        <p>Halaman Rekam Medis menampilkan catatan medis pasien. Fitur pada halaman ini meliputi:</p>
+
+        <ol>
+            <li><span class="bold">Pencarian</span> - Mencari rekam medis berdasarkan nama pasien atau nomor rekam medis</li>
+            <li><span class="bold">Filter Tanggal</span> - Melihat rekam medis pada periode tertentu</li>
+            <li><span class="bold">Tombol Tambah Rekam Medis</span> - Untuk membuat catatan rekam medis baru</li>
+            <li><span class="bold">Tombol Aksi</span> - Untuk melihat detail, mengedit, atau mencetak rekam medis</li>
+        </ol>
+
+        <h3>6.2 Membuat Rekam Medis Baru</h3>
+        
+        <img src="screencapture-demo-klinik-iwindcorporation-rekammedis-add-2025-08-06-10_27_18.png" alt="Tambah Rekam Medis">
+        <div class="image-caption">Gambar 6.2 - Form Tambah Rekam Medis (Langkah 1)</div>
+
+        <img src="screencapture-demo-klinik-iwindcorporation-rekammedis-add-2025-08-06-10_27_28.png" alt="Tambah Rekam Medis - Langkah 2">
+        <div class="image-caption">Gambar 6.3 - Form Tambah Rekam Medis (Langkah 2)</div>
+
+        <img src="screencapture-demo-klinik-iwindcorporation-rekammedis-add-2025-08-06-10_27_36.png" alt="Tambah Rekam Medis - Langkah 3">
+        <div class="image-caption">Gambar 6.4 - Form Tambah Rekam Medis (Langkah 3)</div>
+
+        <p>Untuk membuat rekam medis baru:</p>
+
+        <ol>
+            <li>Klik tombol <span class="bold">Tambah Rekam Medis</span> pada halaman Daftar Rekam Medis</li>
+            <li>Pilih pasien dari daftar pendaftaran atau cari pasien</li>
+            <li>Isi formulir dengan informasi medis:
+                <ul>
+                    <li>Anamnesis (keluhan utama dan riwayat penyakit)</li>
+                    <li>Pemeriksaan fisik (tekanan darah, suhu, dll.)</li>
+                    <li>Diagnosa (dapat memilih dari daftar ICD-10)</li>
+                    <li>Tindakan medis yang dilakukan</li>
+                    <li>Obat yang diresepkan</li>
+                </ul>
+            </li>
+            <li>Klik <span class="bold">Lanjutkan</span> untuk melanjutkan ke halaman berikutnya</li>
+            <li>Pilih obat yang diresepkan dan masukkan dosisnya</li>
+            <li>Klik <span class="bold">Lanjutkan</span> untuk melanjutkan ke halaman berikutnya</li>
+            <li>Verifikasi seluruh data rekam medis</li>
+            <li>Klik <span class="bold">Simpan</span> untuk menyimpan rekam medis</li>
+        </ol>
+
+        <h3>6.3 Melihat Riwayat Rekam Medis Pasien</h3>
+        
+        <p>Untuk melihat riwayat rekam medis pasien:</p>
+        <ol>
+            <li>Temukan pasien di Daftar Pasien</li>
+            <li>Klik tombol <span class="bold">Lihat Rekam Medis</span> pada kolom Aksi</li>
+            <li>Sistem akan menampilkan daftar kunjungan medis pasien tersebut</li>
+            <li>Klik pada kunjungan tertentu untuk melihat detail rekam medis</li>
+        </ol>
+
+        <h3>6.4 Mencetak Rekam Medis</h3>
+        
+        <p>Untuk mencetak rekam medis:</p>
+        <ol>
+            <li>Temukan rekam medis yang ingin dicetak di Daftar Rekam Medis</li>
+            <li>Klik tombol <span class="bold">Cetak</span> pada kolom Aksi</li>
+            <li>Sistem akan menampilkan pratinjau dokumen rekam medis</li>
+            <li>Klik <span class="bold">Print</span> untuk mencetak dokumen</li>
+        </ol>
+    </section>
+
+    <section id="manajemen-dokter">
+        <h2>7. Manajemen Dokter</h2>
+
+        <h3>7.1 Melihat Daftar Dokter</h3>
+        
+        <img src="screencapture-demo-klinik-iwindcorporation-dokter-2025-08-06-10_27_54.png" alt="Daftar Dokter">
+        <div class="image-caption">Gambar 7.1 - Tampilan Daftar Dokter</div>
+
+        <p>Halaman Dokter menampilkan daftar dokter yang praktik di klinik. Fitur pada halaman ini meliputi:</p>
+
+        <ol>
+            <li><span class="bold">Pencarian</span> - Mencari dokter berdasarkan nama atau spesialisasi</li>
+            <li><span class="bold">Pengurutan</span> - Mengurutkan daftar berdasarkan nama atau spesialisasi</li>
+            <li><span class="bold">Tombol Tambah Dokter</span> - Untuk menambahkan dokter baru</li>
+            <li><span class="bold">Tombol Aksi</span> - Untuk melihat detail, mengedit, atau menghapus data dokter</li>
+        </ol>
+
+        <h3>7.2 Menambahkan Dokter Baru</h3>
+        
+        <img src="screencapture-demo-klinik-iwindcorporation-dokter-add-2025-08-06-10_28_04.png" alt="Tambah Dokter">
+        <div class="image-caption">Gambar 7.2 - Form Tambah Dokter</div>
+
+        <p>Untuk menambahkan dokter baru:</p>
+
+        <ol>
+            <li>Klik tombol <span class="bold">Tambah Dokter</span> pada halaman Daftar Dokter</li>
+            <li>Isi formulir dengan data dokter:
+                <ul>
+                    <li>Nama Lengkap</li>
+                    <li>Spesialisasi</li>
+                    <li>Nomor SIP (Surat Izin Praktik)</li>
+                    <li>Nomor Telepon</li>
+                    <li>Email</li>
+                    <li>Jadwal Praktik</li>
+                    <li>Informasi tambahan lainnya</li>
+                </ul>
+            </li>
+            <li>Klik <span class="bold">Simpan</span> untuk menambahkan dokter baru</li>
+        </ol>
+
+        <h3>7.3 Mengedit Data Dokter</h3>
+        
+        <p>Untuk mengedit data dokter:</p>
+        <ol>
+            <li>Temukan dokter yang ingin diubah datanya di Daftar Dokter</li>
+            <li>Klik tombol <span class="bold">Edit</span> (ikon pensil) pada kolom Aksi</li>
+            <li>Ubah informasi yang diperlukan pada formulir Edit Dokter</li>
+            <li>Klik <span class="bold">Simpan</span> untuk menyimpan perubahan</li>
+        </ol>
+
+        <h3>7.4 Menghapus Data Dokter</h3>
+        
+        <p>Untuk menghapus data dokter:</p>
+        <ol>
+            <li>Temukan dokter yang ingin dihapus di Daftar Dokter</li>
+            <li>Klik tombol <span class="bold">Hapus</span> (ikon tempat sampah) pada kolom Aksi</li>
+            <li>Konfirmasi penghapusan pada dialog yang muncul</li>
+            <li>Klik <span class="bold">OK</span> untuk menghapus data dokter</li>
+        </ol>
+    </section>
+
+    <section id="manajemen-obat">
+        <h2>8. Manajemen Obat</h2>
+
+        <h3>8.1 Melihat Daftar Obat</h3>
+        
+        <img src="screencapture-demo-klinik-iwindcorporation-obat-2025-08-06-10_28_18.png" alt="Daftar Obat">
+        <div class="image-caption">Gambar 8.1 - Tampilan Daftar Obat</div>
+
+        <p>Halaman Obat menampilkan daftar obat yang tersedia di klinik. Fitur pada halaman ini meliputi:</p>
+
+        <ol>
+            <li><span class="bold">Pencarian</span> - Mencari obat berdasarkan nama atau jenis</li>
+            <li><span class="bold">Filter</span> - Menyaring obat berdasarkan kategori atau ketersediaan</li>
+            <li><span class="bold">Tombol Tambah Obat</span> - Untuk menambahkan obat baru</li>
+            <li><span class="bold">Informasi Stok</span> - Menampilkan jumlah stok yang tersedia</li>
+            <li><span class="bold">Tombol Aksi</span> - Untuk melihat detail, mengedit, atau menghapus data obat</li>
+        </ol>
+
+        <h3>8.2 Menambahkan Obat Baru</h3>
+        
+        <img src="screencapture-demo-klinik-iwindcorporation-obat-add-2025-08-06-10_28_29.png" alt="Tambah Obat">
+        <div class="image-caption">Gambar 8.2 - Form Tambah Obat</div>
+
+        <p>Untuk menambahkan obat baru:</p>
+
+        <ol>
+            <li>Klik tombol <span class="bold">Tambah Obat</span> pada halaman Daftar Obat</li>
+            <li>Isi formulir dengan data obat:
+                <ul>
+                    <li>Nama Obat</li>
+                    <li>Jenis/Kategori Obat</li>
+                    <li>Satuan (tablet, botol, ampul, dll.)</li>
+                    <li>Jumlah Stok</li>
+                    <li>Harga</li>
+                    <li>Tanggal Kadaluarsa</li>
+                    <li>Informasi tambahan lainnya</li>
+                </ul>
+            </li>
+            <li>Klik <span class="bold">Simpan</span> untuk menambahkan obat baru</li>
+        </ol>
+
+        <h3>8.3 Mengedit Data Obat</h3>
+        
+        <p>Untuk mengedit data obat:</p>
+        <ol>
+            <li>Temukan obat yang ingin diubah datanya di Daftar Obat</li>
+            <li>Klik tombol <span class="bold">Edit</span> (ikon pensil) pada kolom Aksi</li>
+            <li>Ubah informasi yang diperlukan pada formulir Edit Obat</li>
+            <li>Klik <span class="bold">Simpan</span> untuk menyimpan perubahan</li>
+        </ol>
+
+        <h3>8.4 Menghapus Data Obat</h3>
+        
+        <p>Untuk menghapus data obat:</p>
+        <ol>
+            <li>Temukan obat yang ingin dihapus di Daftar Obat</li>
+            <li>Klik tombol <span class="bold">Hapus</span> (ikon tempat sampah) pada kolom Aksi</li>
+            <li>Konfirmasi penghapusan pada dialog yang muncul</li>
+            <li>Klik <span class="bold">OK</span> untuk menghapus data obat</li>
+        </ol>
+
+        <h3>8.5 Manajemen Stok Obat</h3>
+        
+        <p>Untuk mengelola stok obat:</p>
+        <ol>
+            <li>Temukan obat yang ingin dikelola stoknya di Daftar Obat</li>
+            <li>Klik tombol <span class="bold">Kelola Stok</span> pada kolom Aksi</li>
+            <li>Pilih jenis transaksi (masuk atau keluar)</li>
+            <li>Masukkan jumlah dan keterangan</li>
+            <li>Klik <span class="bold">Simpan</span> untuk mencatat transaksi stok</li>
+        </ol>
+    </section>
+
+    <section id="manajemen-poliklinik">
+        <h2>9. Manajemen Poliklinik</h2>
+
+        <h3>9.1 Melihat Daftar Poliklinik</h3>
+        
+        <img src="screencapture-demo-klinik-iwindcorporation-poliklinik-2025-08-06-10_28_41.png" alt="Daftar Poliklinik">
+        <div class="image-caption">Gambar 9.1 - Tampilan Daftar Poliklinik</div>
+
+        <p>Halaman Poliklinik menampilkan daftar poliklinik yang tersedia di klinik. Fitur pada halaman ini meliputi:</p>
+
+        <ol>
+            <li><span class="bold">Pencarian</span> - Mencari poliklinik berdasarkan nama</li>
+            <li><span class="bold">Tombol Tambah Poliklinik</span> - Untuk menambahkan poliklinik baru</li>
+            <li><span class="bold">Tombol Aksi</span> - Untuk melihat detail, mengedit, atau menghapus data poliklinik</li>
+        </ol>
+
+        <h3>9.2 Menambahkan Poliklinik Baru</h3>
+        
+        <img src="screencapture-demo-klinik-iwindcorporation-poliklinik-add-2025-08-06-10_28_48.png" alt="Tambah Poliklinik">
+        <div class="image-caption">Gambar 9.2 - Form Tambah Poliklinik</div>
+
+        <p>Untuk menambahkan poliklinik baru:</p>
+
+        <ol>
+            <li>Klik tombol <span class="bold">Tambah Poliklinik</span> pada halaman Daftar Poliklinik</li>
+            <li>Isi formulir dengan data poliklinik:
+                <ul>
+                    <li>Nama Poliklinik</li>
+                    <li>Deskripsi</li>
+                    <li>Jam Operasional</li>
+                    <li>Informasi tambahan lainnya</li>
+                </ul>
+            </li>
+            <li>Klik <span class="bold">Simpan</span> untuk menambahkan poliklinik baru</li>
+        </ol>
+
+        <h3>9.3 Mengedit Data Poliklinik</h3>
+        
+        <p>Untuk mengedit data poliklinik:</p>
+        <ol>
+            <li>Temukan poliklinik yang ingin diubah datanya di Daftar Poliklinik</li>
+            <li>Klik tombol <span class="bold">Edit</span> (ikon pensil) pada kolom Aksi</li>
+            <li>Ubah informasi yang diperlukan pada formulir Edit Poliklinik</li>
+            <li>Klik <span class="bold">Simpan</span> untuk menyimpan perubahan</li>
+        </ol>
+
+        <h3>9.4 Menghapus Data Poliklinik</h3>
+        
+        <p>Untuk menghapus data poliklinik:</p>
+        <ol>
+            <li>Temukan poliklinik yang ingin dihapus di Daftar Poliklinik</li>
+            <li>Klik tombol <span class="bold">Hapus</span> (ikon tempat sampah) pada kolom Aksi</li>
+            <li>Konfirmasi penghapusan pada dialog yang muncul</li>
+            <li>Klik <span class="bold">OK</span> untuk menghapus data poliklinik</li>
+        </ol>
+    </section>
+
+    <section id="diagnosa">
+        <h2>10. Diagnosa</h2>
+
+        <h3>10.1 Melihat Daftar Diagnosa</h3>
+        
+        <img src="screencapture-demo-klinik-iwindcorporation-diagnosa-2025-08-06-10_29_28.png" alt="Daftar Diagnosa">
+        <div class="image-caption">Gambar 10.1 - Tampilan Daftar Diagnosa</div>
+
+        <p>Halaman Diagnosa menampilkan daftar kode ICD-10 dan diagnosa yang tersedia. Fitur pada halaman ini meliputi:</p>
+
+        <ol>
+            <li><span class="bold">Pencarian</span> - Mencari diagnosa berdasarkan kode atau nama</li>
+            <li><span class="bold">Filter</span> - Menyaring diagnosa berdasarkan kategori</li>
+            <li><span class="bold">Tombol Tambah Diagnosa</span> - Untuk menambahkan diagnosa baru</li>
+            <li><span class="bold">Tombol Aksi</span> - Untuk melihat detail, mengedit, atau menghapus data diagnosa</li>
+        </ol>
+
+        <h3>10.2 Menambahkan Diagnosa Baru</h3>
+        
+        <img src="screencapture-demo-klinik-iwindcorporation-diagnosa-2025-08-06-10_29_37.png" alt="Tambah Diagnosa">
+        <div class="image-caption">Gambar 10.2 - Form Tambah Diagnosa</div>
+
+        <p>Untuk menambahkan diagnosa baru:</p>
+
+        <ol>
+            <li>Klik tombol <span class="bold">Tambah Diagnosa</span> pada halaman Daftar Diagnosa</li>
+            <li>Isi formulir dengan data diagnosa:
+                <ul>
+                    <li>Kode ICD-10</li>
+                    <li>Nama Diagnosa</li>
+                    <li>Deskripsi</li>
+                    <li>Kategori</li>
+                </ul>
+            </li>
+            <li>Klik <span class="bold">Simpan</span> untuk menambahkan diagnosa baru</li>
+        </ol>
+
+        <h3>10.3 Mengedit Data Diagnosa</h3>
+        
+        <p>Untuk mengedit data diagnosa:</p>
+        <ol>
+            <li>Temukan diagnosa yang ingin diubah datanya di Daftar Diagnosa</li>
+            <li>Klik tombol <span class="bold">Edit</span> (ikon pensil) pada kolom Aksi</li>
+            <li>Ubah informasi yang diperlukan pada formulir Edit Diagnosa</li>
+            <li>Klik <span class="bold">Simpan</span> untuk menyimpan perubahan</li>
+        </ol>
+
+        <h3>10.4 Menghapus Data Diagnosa</h3>
+        
+        <p>Untuk menghapus data diagnosa:</p>
+        <ol>
+            <li>Temukan diagnosa yang ingin dihapus di Daftar Diagnosa</li>
+            <li>Klik tombol <span class="bold">Hapus</span> (ikon tempat sampah) pada kolom Aksi</li>
+            <li>Konfirmasi penghapusan pada dialog yang muncul</li>
+            <li>Klik <span class="bold">OK</span> untuk menghapus data diagnosa</li>
+        </ol>
+    </section>
+
+    <section id="manajemen-biaya">
+        <h2>11. Manajemen Biaya</h2>
+
+        <h3>11.1 Melihat Daftar Biaya</h3>
+        
+        <img src="screencapture-demo-klinik-iwindcorporation-biaya-2025-08-06-10_29_58.png" alt="Daftar Biaya">
+        <div class="image-caption">Gambar 11.1 - Tampilan Daftar Biaya</div>
+
+        <p>Halaman Biaya menampilkan daftar transaksi keuangan di klinik. Fitur pada halaman ini meliputi:</p>
+
+        <ol>
+            <li><span class="bold">Filter Tanggal</span> - Untuk melihat transaksi pada periode tertentu</li>
+            <li><span class="bold">Pencarian</span> - Mencari transaksi berdasarkan nama pasien atau jenis transaksi</li>
+            <li><span class="bold">Tombol Tambah Transaksi</span> - Untuk menambahkan transaksi baru</li>
+            <li><span class="bold">Tombol Aksi</span> - Untuk melihat detail, mengedit, atau mencetak kuitansi</li>
+        </ol>
+
+        <h3>11.2 Menambahkan Transaksi Baru</h3>
+        
+        <p>Untuk menambahkan transaksi baru:</p>
+
+        <ol>
+            <li>Klik tombol <span class="bold">Tambah Transaksi</span> pada halaman Daftar Biaya</li>
+            <li>Pilih jenis transaksi (pembayaran layanan medis, pembelian obat, dll.)</li>
+            <li>Pilih pasien terkait (jika ada)</li>
+            <li>Masukkan rincian biaya:
+                <ul>
+                    <li>Jenis layanan/item</li>
+                    <li>Jumlah</li>
+                    <li>Harga satuan</li>
+                    <li>Diskon (jika ada)</li>
+                </ul>
+            </li>
+            <li>Pilih metode pembayaran</li>
+            <li>Klik <span class="bold">Simpan</span> untuk mencatat transaksi</li>
+        </ol>
+
+        <h3>11.3 Mencetak Kuitansi</h3>
+        
+        <p>Untuk mencetak kuitansi pembayaran:</p>
+        <ol>
+            <li>Temukan transaksi yang ingin dicetak kuitansinya di Daftar Biaya</li>
+            <li>Klik tombol <span class="bold">Cetak Kuitansi</span> pada kolom Aksi</li>
+            <li>Sistem akan menampilkan pratinjau kuitansi</li>
+            <li>Klik <span class="bold">Print</span> untuk mencetak kuitansi</li>
+        </ol>
+    </section>
+
+    <section id="laporan">
+        <h2>12. Laporan</h2>
+
+        <h3>12.1 Mengakses Laporan</h3>
+        
+        <img src="screencapture-demo-klinik-iwindcorporation-laporan-2025-08-06-10_30_15.png" alt="Laporan">
+        <div class="image-caption">Gambar 12.1 - Tampilan Halaman Laporan</div>
+
+        <p>Halaman Laporan memungkinkan Anda untuk menghasilkan berbagai jenis laporan. Fitur pada halaman ini meliputi:</p>
+
+        <ol>
+            <li><span class="bold">Jenis Laporan</span> - Pilihan berbagai jenis laporan yang tersedia</li>
+            <li><span class="bold">Filter Periode</span> - Untuk menghasilkan laporan dalam periode tertentu</li>
+            <li><span class="bold">Format Output</span> - Pilihan format laporan (PDF, Excel, dll.)</li>
+            <li><span class="bold">Tombol Generate</span> - Untuk menghasilkan laporan</li>
+        </ol>
+
+        <h3>12.2 Jenis-jenis Laporan</h3>
+        
+        <p>SIM Klinik menyediakan berbagai jenis laporan, antara lain:</p>
+
+        <ol>
+            <li><span class="bold">Laporan Kunjungan Pasien</span> - Data kunjungan pasien dalam periode tertentu</li>
+            <li><span class="bold">Laporan Keuangan</span> - Ringkasan pendapatan dan pengeluaran</li>
+            <li><span class="bold">Laporan Stok Obat</span> - Status stok obat dan pergerakan stok</li>
+            <li><span class="bold">Laporan Kinerja Dokter</span> - Jumlah pasien yang ditangani oleh setiap dokter</li>
+            <li><span class="bold">Laporan Diagnosa</span> - Frekuensi diagnosa dalam periode tertentu</li>
+            <li><span class="bold">Laporan Demografi Pasien</span> - Distribusi pasien berdasarkan usia, jenis kelamin, dll.</li>
+        </ol>
+
+        <h3>12.3 Menghasilkan dan Mencetak Laporan</h3>
+        
+        <p>Untuk menghasilkan dan mencetak laporan:</p>
+        <ol>
+            <li>Pilih jenis laporan yang diinginkan</li>
+            <li>Tentukan periode laporan (tanggal mulai dan tanggal selesai)</li>
+            <li>Pilih filter tambahan jika diperlukan</li>
+            <li>Pilih format output (PDF, Excel, dll.)</li>
+            <li>Klik <span class="bold">Generate</span> untuk menghasilkan laporan</li>
+            <li>Setelah laporan ditampilkan, klik <span class="bold">Print</span> atau <span class="bold">Download</span> untuk mencetak atau menyimpan laporan</li>
+        </ol>
+    </section>
+
+    <section id="manajemen-pengguna">
+        <h2>13. Manajemen Pengguna</h2>
+
+        <h3>13.1 Melihat Daftar Pengguna</h3>
+        
+        <img src="screencapture-demo-klinik-iwindcorporation-user-2025-08-06-10_30_23.png" alt="Daftar Pengguna">
+        <div class="image-caption">Gambar 13.1 - Tampilan Daftar Pengguna</div>
+
+        <p>Halaman User menampilkan daftar pengguna sistem. Fitur pada halaman ini meliputi:</p>
+
+        <ol>
+            <li><span class="bold">Pencarian</span> - Mencari pengguna berdasarkan nama atau peran</li>
+            <li><span class="bold">Tombol Tambah User</span> - Untuk menambahkan pengguna baru</li>
+            <li><span class="bold">Tombol Aksi</span> - Untuk melihat detail, mengedit, atau menonaktifkan pengguna</li>
+        </ol>
+
+        <h3>13.2 Menambahkan Pengguna Baru</h3>
+        
+        <img src="screencapture-demo-klinik-iwindcorporation-user-add-2025-08-06-10_30_32.png" alt="Tambah Pengguna">
+        <div class="image-caption">Gambar 13.2 - Form Tambah Pengguna</div>
+
+        <p>Untuk menambahkan pengguna baru:</p>
+
+        <ol>
+            <li>Klik tombol <span class="bold">Tambah User</span> pada halaman Daftar Pengguna</li>
+            <li>Isi formulir dengan data pengguna:
+                <ul>
+                    <li>Nama Lengkap</li>
+                    <li>Username</li>
+                    <li>Password</li>
+                    <li>Email</li>
+                    <li>Nomor Telepon</li>
+                    <li>Peran/Level Akses (Admin, Dokter, Perawat, Apoteker, Kasir, dll.)</li>
+                    <li>Status (Aktif/Tidak Aktif)</li>
+                </ul>
+            </li>
+            <li>Klik <span class="bold">Simpan</span> untuk menambahkan pengguna baru</li>
+        </ol>
+
+        <h3>13.3 Mengedit Data Pengguna</h3>
+        
+        <p>Untuk mengedit data pengguna:</p>
+        <ol>
+            <li>Temukan pengguna yang ingin diubah datanya di Daftar Pengguna</li>
+            <li>Klik tombol <span class="bold">Edit</span> (ikon pensil) pada kolom Aksi</li>
+            <li>Ubah informasi yang diperlukan pada formulir Edit User</li>
+            <li>Klik <span class="bold">Simpan</span> untuk menyimpan perubahan</li>
+        </ol>
+
+        <h3>13.4 Menonaktifkan Pengguna</h3>
+        
+        <p>Untuk menonaktifkan pengguna:</p>
+        <ol>
+            <li>Temukan pengguna yang ingin dinonaktifkan di Daftar Pengguna</li>
+            <li>Klik tombol <span class="bold">Edit</span> pada kolom Aksi</li>
+            <li>Ubah Status menjadi "Tidak Aktif"</li>
+            <li>Klik <span class="bold">Simpan</span> untuk menyimpan perubahan</li>
+        </ol>
+
+        <h3>13.5 Reset Password Pengguna</h3>
+        
+        <p>Untuk mereset password pengguna:</p>
+        <ol>
+            <li>Temukan pengguna yang passwordnya ingin direset di Daftar Pengguna</li>
+            <li>Klik tombol <span class="bold">Reset Password</span> pada kolom Aksi</li>
+            <li>Konfirmasi reset password pada dialog yang muncul</li>
+            <li>Password akan direset ke nilai default dan pengguna akan diminta untuk mengubahnya saat login berikutnya</li>
+        </ol>
+    </section>
+
+    <section id="backup-data">
+        <h2>14. Backup Data</h2>
+
+        <h3>14.1 Backup Database</h3>
+        
+        <img src="screencapture-demo-klinik-iwindcorporation-backup-2025-08-06-10_30_53.png" alt="Backup Data">
+        <div class="image-caption">Gambar 14.1 - Tampilan Halaman Backup Data</div>
+
+        <p>Halaman Backup memungkinkan Anda untuk membuat cadangan data sistem. Fitur pada halaman ini meliputi:</p>
+
+        <ol>
+            <li><span class="bold">Backup Manual</span> - Untuk melakukan backup data secara manual</li>
+            <li><span class="bold">Jadwal Backup Otomatis</span> - Untuk mengatur jadwal backup otomatis</li>
+            <li><span class="bold">Riwayat Backup</span> - Daftar backup yang telah dilakukan sebelumnya</li>
+            <li><span class="bold">Opsi Restore</span> - Untuk mengembalikan data dari file backup</li>
+        </ol>
+
+        <h3>14.2 Melakukan Backup Manual</h3>
+        
+        <p>Untuk melakukan backup manual:</p>
+        <ol>
+            <li>Klik tombol <span class="bold">Backup Sekarang</span> pada halaman Backup</li>
+            <li>Pilih komponen yang ingin di-backup (seluruh database atau tabel tertentu)</li>
+            <li>Pilih lokasi penyimpanan file backup</li>
+            <li>Klik <span class="bold">Mulai Backup</span> untuk memulai proses backup</li>
+            <li>Setelah selesai, sistem akan memberikan notifikasi dan link untuk mengunduh file backup</li>
+        </ol>
+
+        <h3>14.3 Mengatur Jadwal Backup Otomatis</h3>
+        
+        <p>Untuk mengatur jadwal backup otomatis:</p>
+        <ol>
+            <li>Klik tab <span class="bold">Jadwal Backup</span> pada halaman Backup</li>
+            <li>Tentukan frekuensi backup (harian, mingguan, bulanan)</li>
+            <li>Pilih waktu pelaksanaan backup</li>
+            <li>Tentukan lokasi penyimpanan file backup</li>
+            <li>Klik <span class="bold">Simpan</span> untuk mengaktifkan jadwal backup otomatis</li>
+        </ol>
+
+        <h3>14.4 Restore Data dari Backup</h3>
+        
+        <p>Untuk mengembalikan data dari file backup:</p>
+        <ol>
+            <li>Klik tab <span class="bold">Restore</span> pada halaman Backup</li>
+            <li>Pilih file backup yang ingin digunakan</li>
+            <li>Konfirmasi proses restore pada dialog yang muncul</li>
+            <li>Klik <span class="bold">Mulai Restore</span> untuk memulai proses restore</li>
+            <li>Tunggu hingga proses selesai dan sistem akan restart secara otomatis</li>
+        </ol>
+    </section>
+
+    <section id="kontak-dukungan">
+        <h2>Kontak Dukungan</h2>
+        
+        <p>Jika Anda mengalami masalah atau memiliki pertanyaan tentang penggunaan SIM Klinik, silakan hubungi tim dukungan teknis kami:</p>
+
+        <ul>
+            <li>Email: support@iwindcorporation.com</li>
+            <li>Telepon: (021) 1234-5678</li>
+            <li>Waktu layanan: Senin-Jumat, 08.00-17.00 WIB</li>
+        </ul>
+    </section>
+
+    <div class="footer">
+        <p>&copy; 2025 PT. IWIND CORPORATION. Hak Cipta Dilindungi.</p>
+    </div>
+</body>
+</html>
